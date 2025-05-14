@@ -12,8 +12,8 @@ function App() {
       {/* // component lai invoke garney utha component ko name k xa<Home/>  */}
     <Route path ="/create-page" element={<CreatePage/> }/>  
     <Route path="/home-page"element={<HomePage/>  }/>
-  <Route path="/single-page" element={<SinglePages/>} />
- <Route path="/edit-page" element={<EditPage/>} />
+  <Route path="/single-pages" element={<SinglePages/>} />
+ <Route path="/edit-pages" element={<EditPage/>} />
 
 
     </Routes>
