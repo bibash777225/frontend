@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar(){
     return(
 <>
@@ -17,17 +19,23 @@ function Navbar(){
       <div className="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm">
-                     
+                    
           </ul>
         </nav>
         <div className="flex items-center gap-4">
           <div className="sm:flex sm:gap-4">
             <a className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="#">
-              +create
+            <Link to="/create-page"> +create  </Link> 
             </a>
+            <div className="flex items-center gap-4">
+          <div className="sm:flex sm:gap-4">
+            <a className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="#">
+            <Link to="/edit-page"> +Edit  </Link> 
+            </a>
+            
             <div className="hidden sm:flex">
               <a className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="#">
-                Register
+               <Link to="/single-page"> Register  </Link>
               </a>
             </div>
           </div>
@@ -41,6 +49,8 @@ function Navbar(){
         </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 </header>
 
