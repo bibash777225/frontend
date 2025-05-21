@@ -12,7 +12,7 @@ function App() {
       {/* // component lai invoke garney utha component ko name k xa<Home/>  */}
     <Route path ="/create-page" element={<CreatePage/> }/>  
     <Route path="/"element={<HomePage/>  }/>
-  <Route path="/single-page" element={<SinglePages/>} />
+  <Route path="/single-page/:id" element={<SinglePages/>} />
  <Route path="/edit-page" element={<EditPage/>} />
 
 

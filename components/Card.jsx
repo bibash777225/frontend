@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Card({book}){
  console.log(book)
     return(
-        < Link to={`/single-page ${book.id}`}>
+        < Link to={`/single-page/ ${book.id}`}>
      <div className="flex px-3 py-3">
   <div className="max-w-sm rounded overflow-hidden shadow-lg">
     <div className="px-6 py-4">
